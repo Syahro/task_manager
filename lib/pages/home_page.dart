@@ -8,7 +8,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backGroundColor,
-      floatingActionButton: BottomFloating(),
+      floatingActionButton: BottomFloating(
+        isHome: true,
+        isTask: false,
+        isDashboard: false,
+        isuser: false,
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: SafeArea(
         child: ListView(

@@ -1,8 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager/pages/dashboard_page.dart';
+import 'package:task_manager/pages/home_page.dart';
 import 'package:task_manager/theme.dart';
 import 'package:task_manager/widget/icon_floating.dart';
 
 class BottomFloating extends StatelessWidget {
+  final bool isHome;
+  final bool isTask;
+  final bool isDashboard;
+  final bool isuser;
+
+  BottomFloating({
+    this.isHome,
+    this.isTask,
+    this.isDashboard,
+    this.isuser,
+  });
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,21 +32,45 @@ class BottomFloating extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            IconFloating(
-              imageUrl: 'assets/home.png',
-              isActive: true,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return HomePage();
+                    },
+                  ),
+                );
+              },
+              child: IconFloating(
+                imageUrl: 'assets/home.png',
+                isActive: isHome,
+              ),
             ),
             IconFloating(
               imageUrl: 'assets/task.png',
-              isActive: false,
+              isActive: isTask,
             ),
-            IconFloating(
-              imageUrl: 'assets/dashboard.png',
-              isActive: false,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return DashboardPage();
+                    },
+                  ),
+                );
+              },
+              child: IconFloating(
+                imageUrl: 'assets/dashboard.png',
+                isActive: isDashboard,
+              ),
             ),
             IconFloating(
               imageUrl: 'assets/user.png',
-              isActive: false,
+              isActive: isuser,
             )
           ],
         ),
