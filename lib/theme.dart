@@ -6,6 +6,7 @@ final double defaultMargin = 30.0;
 Color whiteColor = Color(0XFFFFFFFF);
 Color backGroundColor = Color(0XFFF9F9F9);
 Color greyColor = Color(0XFF9F9F9F);
+Color semiLightGreyColor = Color(0XFFE4E4E4);
 Color lightGreyColor = Color(0XFFCCCCCC);
 Color blackColor = Color(0XFF000000);
 Color lightBlackColor = Color(0XFF252525);
