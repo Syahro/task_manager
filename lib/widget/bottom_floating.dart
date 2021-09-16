@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager/pages/daily_task_page.dart';
 import 'package:task_manager/pages/dashboard_page.dart';
 import 'package:task_manager/pages/home_page.dart';
 import 'package:task_manager/theme.dart';
@@ -48,9 +49,21 @@ class BottomFloating extends StatelessWidget {
                 isActive: isHome,
               ),
             ),
-            IconFloating(
-              imageUrl: 'assets/task.png',
-              isActive: isTask,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return DailyTaskPage();
+                    },
+                  ),
+                );
+              },
+              child: IconFloating(
+                imageUrl: 'assets/task.png',
+                isActive: isTask,
+              ),
             ),
             InkWell(
               onTap: () {
