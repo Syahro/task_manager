@@ -1,16 +1,15 @@
 # task_manager
 
-A new Flutter project.
+A new Task Manager Flutter project.
+
+design by BWA.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application. I Just implement that include in UI Design for my practice and many flaws of using some widget on it.
 
-A few resources to get you started if this is your first Flutter project:
+Big Thank's to BWA for the Design that can i use for my practice.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Here is some UI View.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="437" alt="cover" src="https://user-images.githubusercontent.com/42954205/134111463-e8ab80d2-3ff1-4285-8bf5-fcb2c5244ef8.png">
